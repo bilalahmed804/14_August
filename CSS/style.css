@@ -7,8 +7,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     background: #262626;
+}
+h1{
+    margin-bottom: 4%;
+    color: #00b600;
+    padding-bottom: 1%;
+    border-bottom: 5px solid white;
 }
 .flag{
     position: relative;
@@ -50,3 +57,36 @@ svg{
     margin-left: 280px;
     z-index: 100;
 }
+
+
+.star {
+    position: absolute;
+    top: 50%;
+    left: 67%;
+    width: 44px;
+    height: 44px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    animation: fadeIn 1.5s ease-out forwards 1s;
+}
+
+.moon-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
+
+.moon {
+    position: absolute;
+    left: 53vh;
+    width: 120%;
+    height: 120%;
+    background-color: darkgreen;
+    border-radius: 99%;
+    box-shadow: -18px 0 0 0 white;
+    rotate: -40deg;
+}
+
